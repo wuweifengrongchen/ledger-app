@@ -2,7 +2,7 @@
   "name": "荣晨记账",
   "short_name": "荣晨记账",
   "description": "荣晨科技 - 日常生活工作记账本",
-  "start_url": "./index.html",
+  "start_url": "./index.html?v=2",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
