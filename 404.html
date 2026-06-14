@@ -2,11 +2,22 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="0;url=/ledger-app/">
 <title>荣晨记账</title>
+<script>
+// GitHub Pages SPA redirect
+// If someone hits /index.html (wrong path), redirect to /ledger-app/
+var path = window.location.pathname;
+if (path === '/index.html' || path === '/') {
+  window.location.replace('/ledger-app/');
+} else if (!path.startsWith('/ledger-app/')) {
+  window.location.replace('/ledger-app/');
+} else {
+  // Within /ledger-app/ but file not found, go to index
+  window.location.replace('/ledger-app/index.html');
+}
+</script>
 </head>
 <body>
-<script>window.location.href = '/ledger-app/';</script>
 <p>正在跳转...</p>
 </body>
 </html>
